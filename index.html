@@ -18,7 +18,11 @@
         <div class="flex fixed  inset-0 bg-cream items-center justify-center">
             <div class="flex max-w-2xl bg-white rounded-xl shadow-md">
                 <div>
-                    <img class="rounded-bl-xl rounded-tl-xl" src="./img/image-product-desktop.jpg" alt="product-img">
+                    <picture>
+                        <source media="(max-width: 375px)" srcset="./img/image-product-mobile.jpg">
+                        <source media="(min-width: 1044px)" srcset="./img/image-product-desktop.jpg">
+                        <img class="rounded-bl-xl rounded-tl-xl" src="./img/image-product-mobile.jpg" alt="product-img">
+                    </picture>
                 </div>
                 <div class="grid max-w-xs">
                     <div class="m-8">
